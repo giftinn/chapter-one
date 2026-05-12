@@ -240,8 +240,8 @@ pointer-events:none;
 
 <!-- welcome -->
 <section class="card active">
-<h1>Special gift</h1>
-<p>For someone i love the most. <br>But you have to unlock it.</p>
+<h1>This one is for you, Sabella.</h1>
+<p>But you have to unlock it.</p>
 <button onclick="next()">Unlock</button>
 </section>
 
@@ -273,7 +273,7 @@ pointer-events:none;
 <div id="options"></div>
 
 <div class="score-box">
-Points: <span id="score">0</span> / 3
+Points: <span id="score">0</span> / 7
 </div>
 
 <p id="feedback"></p>
@@ -282,7 +282,7 @@ Points: <span id="score">0</span> / 3
 <!-- final -->
 <section class="card">
 
-<h1>Another Month of Us</h1>
+<h1>Hi, my dear, S.</h1>
 
 <div class="lovebox">
 <div class="timer-title">TIME WITH YOU</div>
@@ -336,7 +336,7 @@ if(page===2)loadQuestion();
 ================================================= */
 
 let pinInput = '';
-const correctPin = '1402';
+const correctPin = '0505';
 const pinDisplay = document.getElementById("pin");
 
 function renderDots(){
@@ -384,9 +384,13 @@ function checkPin(){
 ================================================= */
 
 const questions=[
-{q:"When did we first meet? ", options:["14 February"," 24 January","22 January"],correct:2},
-{q:"Who loves the most?", options:["You","100% me","Both"],correct:2},
-{q:"What’s on my mind most of the time?", options:["Anime","Someone else","You (my pretty girlfriend"],correct:2}
+{q:"In what month did you two meet each other?", options:["January","May","December"],correct:1},
+{q:"What would you do if you missed Abam?", options:["Ignore it","Go to sleep","Text me"],correct:2},
+{q:"Who is your favorite man?", options:["Abraham","James","Ryul"],correct:0},
+{q:"Why do you think Abam loves you?", options:["Because you’re pretty","Because you’re amazing","Because you are you."],correct:2},
+{q:"Who do you think is Abam’s favorite girl?", options:["Hanni","Jiwoo","Sabil"],correct:2},
+{q:"What are your pet names for each other?", options:["Kitten–Puppy","Mas–Adek","ust “Sayang”"],correct:1},
+{q:"Are you ready to step into the next chapter with Abam?", options:["No (PLEASE DON’T PRESS THIS OR I’LL CRY)","Yes","No (DON’T YOU DARE)"],correct:1},
 ];
 
 let currentQ = 0;
@@ -451,7 +455,7 @@ function checkAnswer(i,btn){
 
 function startTimer(){
 
-    const start = new Date("2026-01-22T00:00:00");
+    const start = new Date("2025-05-05T00:00:00");
 
     setInterval(()=>{
 
@@ -485,11 +489,21 @@ function revealMemory(el){
     `;
 
     const text = `
-      Even all the beautiful words in the world still wouldn’t be enough to explain how much you mean to me. Yet here you are, right in my life, and somehow that alone says everything. I admire the little things about you—the way you care about me, the way you talk, and how your eyes light up when you’re excited, especially when it’s with me. 
+        Look at those unstopped clocks above us, it always ticking.. counting every second, every breath, every moment we’ve spent together. It's such a short time, isn’t it? I hope those clock above will continue to count longer, and never stop counting for us until death does us apart, adek.
 
-      With you, I’ve found a kind of peace I didn’t even know I was looking for. It’s a kind of comfort I didn’t know I needed until I found it in you. It’s something I can’t find anywhere else, no matter how hard I try. Every moment with you, no matter how small, feels important and meaningful.
-      
-      Thank you for being here with me, for every moment, every word, and every feeling we’ve shared. Happy 2nd mensiversary, sayangku. I’m so grateful for you, today and always. ❤️  
+        First of all, thank you for coming into my life when I was truly at my lowest point. I felt like I was barely alive anymore, but you pulled me into a life. You showed me what it felt like to live again, moreover, you stayed to protect those fragile part of me. You protected me. You made me feel alive, loved, and most importantly, seen. 
+        
+        And honestly, somewhere along the way, I started falling for you more and more each day. I never thought this day would ever come—especially coming from the same cocky person who swore he’d never date seriously and would rather collect “100 FWA partners” instead, lmao. But I guess the heart can’t really lie, can it?
+        
+        Because eventually, I realized something terrifyingly simple:
+        I love you.
+        
+        I love you in a way I could never fully explain with words. I want to protect you at all costs. I don’t want to hurt you, disappoint you, or ever become the reason you cry. And even IF I ever do (I hope never), please always remember that I never mean to.
+        
+        So… with all of that being said,
+        would you let me love you properly?
+        
+        Would you be mine, and let me be yours, Sabella Faavesha?
       `;
 
     const paragraphs = text.trim().split(/\n\s*\n/);
